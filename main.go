@@ -116,7 +116,7 @@ func fetchUrl(target string, opts Options, c *cli.Context) error {
 
 	if opts.method == http.MethodPut {
 		// TODO : add support for reading contents from stdin
-		if strings.HasSuffix(remote.Path, "/") {
+		if strings.HasSuffix(remote.Path, "/") || remote.Path == "" {
 			remote.Path = filepath.Join(remote.Path, filepath.Base(opts.fileUpload))
 			target = remote.String()
 		}
