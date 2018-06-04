@@ -252,7 +252,7 @@ func fetchUrl(target string, opts Options, c *cli.Context) error {
 
 func setHeaders(r *http.Request, h []string) {
 	for _, header := range h {
-		hParts := strings.Split(header, ": ")
+		hParts := strings.SplitN(header, ":", 2)
 		switch len(hParts) {
 		case 0:
 			//surely not
@@ -267,11 +267,9 @@ func setHeaders(r *http.Request, h []string) {
 			}
 		case 2:
 			//standard expected
-			r.Header.Set(hParts[0], hParts[1])
+			r.Header.Set(strings.TrimSpace(hParts[0]), strings.TrimSpace(hParts[1]))
 		default:
-			//more than expected, use first element as Header name
-			//and rejoin the rest as header content
-			r.Header.Set(hParts[0], strings.Join(hParts[1:], ": "))
+			// No possible.
 		}
 	}
 }

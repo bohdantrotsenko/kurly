@@ -297,7 +297,7 @@ func (opts *Options) BuildTargetSpecificOptions(target string) (io.Reader, error
 			header = "Content-Type: " + w.FormDataContentType()
 		}
 
-		opts.headers = append(opts.headers, header)
+		opts.headers = append([]string{header}, opts.headers...)
 		body = &data
 	}
 
@@ -309,6 +309,14 @@ func (o *Options) ProcessData() {
 	for _, d := range o.dataAscii {
 		parts := strings.SplitN(d, "=", 2)
 		if len(parts) == 1 {
+			if strings.HasPrefix(parts[0], "@") {
+				data, err := ioutil.ReadFile(strings.TrimPrefix(parts[0], "@"))
+				if err != nil {
+					Status.Fatalf("Unable to read file %s : %s", strings.TrimPrefix(parts[0], "@"), err)
+				}
+				o.data = append(o.data, string(data))
+				continue
+			}
 			o.data = append(o.data, d)
 			continue
 		}
