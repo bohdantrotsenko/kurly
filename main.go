@@ -21,7 +21,7 @@ import (
 
 	"github.com/aki237/nscjar"
 	"github.com/alsm/ioprogress"
-	"github.com/davidjpeacock/cli"
+	"github.com/urfave/cli"
 )
 
 var (

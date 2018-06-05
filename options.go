@@ -16,7 +16,7 @@ import (
 	"time"
 
 	"github.com/alsm/ioprogress"
-	"github.com/davidjpeacock/cli"
+	"github.com/urfave/cli"
 )
 
 type Field struct {
