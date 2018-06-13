@@ -24,4 +24,12 @@ for PLATFORM in $PLATFORMS; do
         #echo $CMD
         echo "${CMD}"
         eval $CMD || FAILURES="${FAILURES} ${PLATFORM}"
+	if [[ "${GOOS}" == "windows" ]]; then
+	    zip $FILEPATH/${GOOS}-${GOARCH}.zip -j ${BIN_FILE_NAME} LICENSE README.md
+	    rm $FILEPATH/kurly.exe
+	else
+	    cp README.md LICENSE meta/kurly.man $FILEPATH
+	    tar czvf $FILEPATH/${GOOS}-${GOARCH}.tar.gz -C $FILEPATH kurly README.md LICENSE kurly.man
+	    rm $FILEPATH/kurly $FILEPATH/README.md $FILEPATH/LICENSE $FILEPATH/kurly.man
+	fi
 done
