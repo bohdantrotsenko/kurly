@@ -4,12 +4,12 @@
 
 BIN_FILE_NAME_PREFIX=$1
 PROJECT_DIR=$2
-PLATFORMS="linux/386 linux/amd64 linux/arm linux/arm64 \
-	   darwin/386 darwin/amd64 \
-	   freebsd/386 freebsd/amd64 freebsd/arm \
-	   netbsd/386 netbsd/amd64 netbsd/arm \
-	   openbsd/386 openbsd/amd64 openbsd/arm \
-	   windows/386 windows/amd64"
+PLATFORMS="linux/amd64 linux/arm \
+	   darwin/amd64 \
+	   freebsd/amd64 freebsd/arm \
+	   netbsd/amd64 netbsd/arm \
+	   openbsd/amd64 openbsd/arm \
+	   windows/amd64"
 
 for PLATFORM in $PLATFORMS; do
         GOOS=${PLATFORM%/*}
