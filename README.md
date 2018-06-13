@@ -1,6 +1,6 @@
 # kurly
 
-[![Build Status](https://travis-ci.org/davidjpeacock/kurly.svg?branch=master)](https://travis-ci.org/davidjpeacock/kurly) [![Snap Status](https://build.snapcraft.io/badge/letozaf/kurly.svg)](https://build.snapcraft.io/user/letozaf/kurly)
+[![Build Status](https://gitlab.com/davidjpeacock/kurly/badges/master/build.svg)](https://gitlab.com/davidjpeacock/kurly/-/jobs) [![Snap Status](https://build.snapcraft.io/badge/letozaf/kurly.svg)](https://build.snapcraft.io/user/letozaf/kurly)
 
 kurly is an alternative to the widely popular curl program.
 
