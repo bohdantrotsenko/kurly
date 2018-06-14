@@ -2,6 +2,8 @@
 
 # script taken from https://gist.github.com/mshafiee/5a681bbefda8f26f1f257d62f5e4a699
 
+
+
 BIN_FILE_NAME_PREFIX=$1
 PROJECT_DIR=$2
 PLATFORMS="linux/amd64 linux/arm \
@@ -10,6 +12,9 @@ PLATFORMS="linux/amd64 linux/arm \
 	   netbsd/amd64 netbsd/arm \
 	   openbsd/amd64 openbsd/arm \
 	   windows/amd64"
+
+apt update
+apt install -y zip
 
 for PLATFORM in $PLATFORMS; do
         GOOS=${PLATFORM%/*}
@@ -24,4 +29,12 @@ for PLATFORM in $PLATFORMS; do
         #echo $CMD
         echo "${CMD}"
         eval $CMD || FAILURES="${FAILURES} ${PLATFORM}"
+	if [[ "${GOOS}" == "windows" ]]; then
+	    zip $FILEPATH/${GOOS}-${GOARCH}.zip -j ${BIN_FILE_NAME} LICENSE README.md
+	    rm $FILEPATH/kurly.exe
+	else
+	    cp README.md LICENSE meta/kurly.man $FILEPATH
+	    tar czvf $FILEPATH/${GOOS}-${GOARCH}.tar.gz -C $FILEPATH kurly README.md LICENSE kurly.man
+	    rm $FILEPATH/kurly $FILEPATH/README.md $FILEPATH/LICENSE $FILEPATH/kurly.man
+	fi
 done
