@@ -2,6 +2,8 @@
 
 # script taken from https://gist.github.com/mshafiee/5a681bbefda8f26f1f257d62f5e4a699
 
+
+
 BIN_FILE_NAME_PREFIX=$1
 PROJECT_DIR=$2
 PLATFORMS="linux/amd64 linux/arm \
@@ -10,6 +12,9 @@ PLATFORMS="linux/amd64 linux/arm \
 	   netbsd/amd64 netbsd/arm \
 	   openbsd/amd64 openbsd/arm \
 	   windows/amd64"
+
+apt update
+apt install -y zip
 
 for PLATFORM in $PLATFORMS; do
         GOOS=${PLATFORM%/*}
