@@ -22,7 +22,7 @@ we picked Golang.
 
 From source you can simply:
 
-`go get github.com/davidjpeacock/kurly`
+`go get gitlab.com/davidjpeacock/kurly`
 
 ## OS Package
 
@@ -115,15 +115,15 @@ love you to help.
 
 Bug reports, feature requests, and pull requests are all welcome.  Thank you!
 
-Please see [CONTRIBUTING.md](https://github.com/davidjpeacock/kurly/blob/master/CONTRIBUTING.md) for details of how to work with us.
+Please see [CONTRIBUTING.md](https://gitlab.com/davidjpeacock/kurly/blob/master/CONTRIBUTING.md) for details of how to work with us.
 
 ## Maintainers
 
 kurly is brought to you and maintained by:
 
-* [Akilan Elango](https://github.com/aki237)
+* [Akilan Elango](https://gitlab.com/aki237)
 * [Al S-M](https://github.com/alsm)
-* [David J Peacock](https://github.com/davidjpeacock)
+* [David J Peacock](https://gitlab.com/davidjpeacock)
 
 ## License
 
