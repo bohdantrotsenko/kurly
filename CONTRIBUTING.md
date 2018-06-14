@@ -6,7 +6,7 @@ If you haven't already, come find us in IRC ([#kurly](irc://chat.freenode.net/ku
 
 ## Important resources
 
-* [GitHub Issues](https://github.com/davidjpeacock/kurly/issues) for general bug reports feature requests
+* [GitLab Issues](https://gitlab.com/davidjpeacock/kurly/issues) for general bug reports feature requests
 * [Email](mailto:david.j.peacock@gmail.com) for security related bugs that require sensitivity
 * [#kurly](irc://chat.freenode.net/kurly) IRC channel on Freenode
 
@@ -17,7 +17,7 @@ We need contributors to a wide variety of things for kurly.  Examples include:
 * Documentation - if you see a gap or error in any docs, please consider addressing this
 * Test coverage - testing is something we're struggling with for kurly right now, and this needs all the help it can get
 * Packaging - if you're able and willing to be a long-term maintainer of a particular package for your distribution or OS of course, please get in touch
-* Bug fixes - please peruse the [GitHub Issues List]((https://github.com/davidjpeacock/kurly/issues); in particular, watch out for the tags 'help wanted', and 'good first issue'
+* Bug fixes - please peruse the [GitLab Issues List](https://gitlab.com/davidjpeacock/kurly/issues); in particular, watch out for the tags 'help wanted', and 'good first issue'
 * Features - we welcome features too - please feel free to discuss anything in advance on our IRC channel [#kurly](irc://chat.freenode.net/kurly) in order to coordinate efforts
 
 ## Guidelines
@@ -30,7 +30,7 @@ add whizbang doohickey
 This commit adds functionality to help with things
 to do with the other thing that we also worked on before
 ```
-* Make use of [GitHub keywords](https://help.github.com/articles/closing-issues-using-keywords/) in your commit messages to automatically link pull requests to issues
+* Make use of [GitLab keywords](https://docs.gitlab.com/ee/user/project/issues/automatic_issue_closing.html) in your commit messages to automatically link pull requests to issues
 * When adding a new feature ie., adding a new commandline option, make sure to add documentation for the same in the [man page](meta/kurly.man) included in the project.
 
 Thanks,
