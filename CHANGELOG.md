@@ -3,6 +3,21 @@ This file contains a record of all non-trivial changes to kurly
 
 ## [Unreleased]
 
+## Added
+* Gitlab CI/CD integration to build and archive the binary and associated files
+
+## Fixed
+* Uploading files and Sending request bodies
+* Printing the headers of the Redirecting response
+* Rebuilding the URL when it has no trailing slash
+* Github references to Gitlab
+
+## Removed
+* Travis CI support
+* snap package support
+* rpm build spec file
+* Dockerfile
+
 ## [1.2.1] 20180312
 
 ### Added
