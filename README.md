@@ -24,14 +24,13 @@ From source you can simply:
 
 `go get gitlab.com/davidjpeacock/kurly`
 
-## OS Package
+## OS Distribution Package
 
 `kurly` can be installed through package management systems on the following platforms:
 
 * Arch Linux via Arch User Repos
   + For stable versions : `pacaur -S kurly` or `yaourt -S kurly`
   + For tip/development versions : `pacaur -S kurly-git` or `yaourt -S kurly-git` 
-* Linux x86 64 via [RPM](https://github.com/davidjpeacock/kurly/releases/download/v1.2.1/kurly-1.2.1-0.x86_64.rpm) - `yum install kurly-1.2.1-0.x86_64.rpm`
 
 *If you're a package maintainer and you have prepared kurly for your OS of choice, please
 PR this section.*
