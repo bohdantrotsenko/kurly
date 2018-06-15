@@ -39,10 +39,16 @@ PR this section.*
 
 Binaries are provided for the following platforms:
 
-* [Linux amd64](https://github.com/davidjpeacock/kurly/releases/download/v1.2.1/kurly-linux-amd64-v1.2.1.tar.gz)
-* [Linux arm](https://github.com/davidjpeacock/kurly/releases/download/v1.2.1/kurly-linux-arm-v1.2.1.tar.gz)
-* [Mac OS X amd64](https://github.com/davidjpeacock/kurly/releases/download/v1.2.1/kurly-osx-amd64-v1.2.1.tar.gz)
-* [Windows amd64](https://github.com/davidjpeacock/kurly/releases/download/v1.2.1/kurly-windows-amd64-v1.2.1.zip)
+* [Mac OS X amd64](https://gitlab.com/davidjpeacock/kurly/-/jobs/artifacts/master/raw/artifacts/darwin-amd64/kurly-darwin-amd64.tar.gz?job=compile)
+* [Windows amd64](https://gitlab.com/davidjpeacock/kurly/-/jobs/artifacts/master/raw/artifacts/windows-amd64/kurly-windows-amd64.zip?job=compile)
+* [Linux amd64](https://gitlab.com/davidjpeacock/kurly/-/jobs/artifacts/master/raw/artifacts/linux-amd64/kurly-linux-amd64.tar.gz?job=compile)
+* [Linux arm](https://gitlab.com/davidjpeacock/kurly/-/jobs/artifacts/master/raw/artifacts/linux-arm/kurly-linux-arm.tar.gz?job=compile)
+* [FreeBSD amd64](https://gitlab.com/davidjpeacock/kurly/-/jobs/artifacts/master/raw/artifacts/freebsd-amd64/kurly-freebsd-amd64.tar.gz?job=compile)
+* [FreeBSD arm](https://gitlab.com/davidjpeacock/kurly/-/jobs/artifacts/master/raw/artifacts/freebsd-arm/kurly-freebsd-arm.tar.gz?job=compile)
+* [OpenBSD amd64](https://gitlab.com/davidjpeacock/kurly/-/jobs/artifacts/master/raw/artifacts/openbsd-amd64/kurly-openbsd-amd64.tar.gz?job=compile)
+* [OpenBSD arm](https://gitlab.com/davidjpeacock/kurly/-/jobs/artifacts/master/raw/artifacts/openbsd-arm/kurly-openbsd-arm.tar.gz?job=compile)
+* [NetBSD amd64](https://gitlab.com/davidjpeacock/kurly/-/jobs/artifacts/master/raw/artifacts/netbsd-amd64/kurly-netbsd-amd64.tar.gz?job=compile)
+* [NetBSD arm](https://gitlab.com/davidjpeacock/kurly/-/jobs/artifacts/master/raw/artifacts/netbsd-arm/kurly-netbsd-arm.tar.gz?job=compile)
 
 ## Usage
 
@@ -66,7 +72,7 @@ $ kurly -v https://httpbin.org/ip
 *  issuer: C=US; O=Let's Encrypt; CN=Let's Encrypt Authority X3
 *  SSL certificate verify ok.
 > GET /ip HTTP/1.1
-> User-Agent [Kurly/1.2.1]
+> User-Agent [Kurly/master]
 > Accept [*/*]
 > Host [httpbin.org]
 < HTTP/1.1 200 OK

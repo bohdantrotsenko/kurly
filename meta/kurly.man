@@ -1,4 +1,4 @@
-.TH kurly 1 "March 12, 2018" "kurly 1.2.1" "kurly Manual"
+.TH kurly 1 "March 12, 2018" "kurly master" "kurly Manual"
 
 .SH NAME
 kurly \- alternative to the popular program curl
@@ -147,9 +147,9 @@ This option specifies which request method had to be used for the current reques
 
 .SH AUTHORS / CONTRIBUTORS
 David J Peacock is the main author, but the whole list of contributors is
-found here \fIhttps://github.com/davidjpeacock/kurly/graphs/contributors\fP.
+found here \fIhttps://gitlab.com/davidjpeacock/kurly/graphs/master\fP.
 .SH WWW
-\fIhttps://github.com/davidjpeacock/kurly\fP
+\fIhttps://gitlab.com/davidjpeacock/kurly\fP
 .SH "SEE ALSO"
 .BR wget (1),
 .BR curl (1)
