@@ -32,7 +32,7 @@ format:
 compile:
     stage: build
     script:
-      - bash $CI_PROJECT_DIR/meta/build.sh kurly $CI_PROJECT_DIR
+      - bash $CI_PROJECT_DIR/build/build.sh kurly $CI_PROJECT_DIR
     artifacts:
       paths:
         - artifacts/

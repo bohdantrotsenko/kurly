@@ -33,7 +33,7 @@ for PLATFORM in $PLATFORMS; do
 	    zip $FILEPATH/kurly-${GOOS}-${GOARCH}.zip -j ${BIN_FILE_NAME} LICENSE README.md
 	    rm $FILEPATH/kurly.exe
 	else
-	    cp README.md LICENSE meta/kurly.man $FILEPATH
+	    cp README.md LICENSE doc/kurly.man $FILEPATH
 	    tar czvf $FILEPATH/kurly-${GOOS}-${GOARCH}.tar.gz -C $FILEPATH kurly README.md LICENSE kurly.man
 	    rm $FILEPATH/kurly $FILEPATH/README.md $FILEPATH/LICENSE $FILEPATH/kurly.man
 	fi
