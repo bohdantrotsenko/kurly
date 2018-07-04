@@ -32,7 +32,7 @@ var (
 )
 
 const (
-	version string = "master"
+	version string = "1.2.2"
 )
 
 type LogWriter struct {

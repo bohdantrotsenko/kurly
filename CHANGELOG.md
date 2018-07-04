@@ -3,6 +3,8 @@ This file contains a record of all non-trivial changes to kurly
 
 ## [Unreleased]
 
+## [1.2.2] 20180704
+
 ## Added
 * Gitlab CI/CD integration to build and archive the binary and associated files
 
