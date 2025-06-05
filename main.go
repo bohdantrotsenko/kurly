@@ -6,7 +6,6 @@ import (
 	"encoding/base64"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"log"
 	"mime/multipart"
 	"net/http"
@@ -49,8 +48,8 @@ func init() {
 		Name:  "version, V",
 		Usage: "print the version",
 	}
-	Incoming = &LogWriter{Logger: log.New(ioutil.Discard, "< ", 0)}
-	Outgoing = &LogWriter{Logger: log.New(ioutil.Discard, "> ", 0)}
+	Incoming = &LogWriter{Logger: log.New(io.Discard, "< ", 0)}
+	Outgoing = &LogWriter{Logger: log.New(io.Discard, "> ", 0)}
 }
 
 func main() {
